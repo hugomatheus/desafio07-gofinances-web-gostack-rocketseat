@@ -3,6 +3,7 @@ import styled, { css, FlattenSimpleInterpolation } from 'styled-components';
 interface UploadProps {
   isDragActive: boolean;
   isDragReject: boolean;
+  rejectedFilesBoolean: boolean;
   refKey?: string;
   [key: string]: any;
   type?: 'error' | 'success' | 'default';
