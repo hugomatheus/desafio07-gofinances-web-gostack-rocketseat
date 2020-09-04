@@ -3,7 +3,6 @@ import styled, { css, FlattenSimpleInterpolation } from 'styled-components';
 interface UploadProps {
   isDragActive: boolean;
   isDragReject: boolean;
-  rejectedFilesBoolean: boolean;
   refKey?: string;
   [key: string]: any;
   type?: 'error' | 'success' | 'default';
@@ -47,6 +46,16 @@ export const UploadMessage = styled.p`
 
   color: ${({ type }: UploadProps) => messageColors[type || 'default']};
 
+  justify-content: center;
+  align-items: center;
+`;
+export const UploadMessageFileLarge = styled.p`
+  display: flex;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 2px 0;
+  color: #e83f5b;
+  text-align: center;
   justify-content: center;
   align-items: center;
 `;
